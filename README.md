@@ -29,12 +29,10 @@ mercure:
 mercure_server:
 	./bin/mercure --publisher-jwt-key='!ChangeMe!' --jwt-key='!ChangeMe!' --addr='localhost:3000' --demo='1' --debug --allow-anonymous='1' --cors-allowed-origins='*' --publish-allowed-origins='http://localhost:3000/.well-known/mercure'
 ```
-# Subscribe
-```javascript
-	  ///////////////////////////
-	 // Inscription à mercure //
-	///////////////////////////
 
+# Client Side
+## Subscribe to mercure
+```javascript
 	// Init mercure url
 	const url = new URL('http://localhost:3000/.well-known/mercure')
 	// Adding "topic" corresponding to chat notifications
@@ -51,4 +49,21 @@ mercure_server:
 		    eventSource.close()
 		}
 	})
+```
+# Server Side
+
+## Publishing data
+
+```php
+    #[Route('/push', name: 'push')]
+    public function push(HubInterface $hub): Response
+    {
+        $update = new Update(
+            '/chat',
+            json_encode(['data' => 0])
+        );
+
+        $hub->publish($update);
+        return new Response($this->generateUrl("chat"));
+    }
 ```
