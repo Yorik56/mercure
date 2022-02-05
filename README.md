@@ -1,4 +1,10 @@
-# mercure
+# Install
+
+```
+composer req mercure
+```
+
+# Config
 
 > .env
 
