@@ -1,12 +1,12 @@
-.toast {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 200px;
-    width: 20%;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+/*.toast {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    height: 200px;*/
+/*    width: 20%;*/
+/*    background: white;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-direction: column;*/
+/*}*/
