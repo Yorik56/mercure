@@ -31,24 +31,24 @@ mercure_server:
 ```
 # Subscribe
 ```javascript
-	      ///////////////////////////
-             // Inscription à mercure //
-            ///////////////////////////
+	  ///////////////////////////
+	 // Inscription à mercure //
+	///////////////////////////
 
-            // Initialisation de l'url mercure
-            const url = new URL('http://localhost:3000/.well-known/mercure')
-            // On ajoute le "topic" correspondant aux notifications de chat
-            url.searchParams.append('topic','/chat')
-            // On écoute les évènements provenant de mercure
-            const eventSource = new EventSource(url)
-            eventSource.onmessage = (e) => {
-                alert('ok');
-                console.log(e)
-            }
-            // Désinscription à mercure
-            window.addEventListener('beforeunload', function () {
-                if(eventSource != null){
-                    eventSource.close()
-                }
-            })
+	// Initialisation de l'url mercure
+	const url = new URL('http://localhost:3000/.well-known/mercure')
+	// On ajoute le "topic" correspondant aux notifications de chat
+	url.searchParams.append('topic','/chat')
+	// On écoute les évènements provenant de mercure
+	const eventSource = new EventSource(url)
+	eventSource.onmessage = (e) => {
+		alert('ok');
+		console.log(e)
+	}
+	// Désinscription à mercure
+	window.addEventListener('beforeunload', function () {
+		if(eventSource != null){
+		    eventSource.close()
+		}
+	})
 ```
