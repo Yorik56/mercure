@@ -5,7 +5,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Mercure\PublisherInterface;
+use Symfony\Component\Mercure\HubInterface;
 use Symfony\Component\Mercure\Update;
 use Symfony\Component\Routing\Annotation\Route;
 use \Firebase\JWT\JWT;
@@ -36,15 +36,16 @@ class HomeController extends AbstractController
     }
 
     #[Route('/push', name: 'push')]
-    public function push(Request $request, PublisherInterface $publisher): Response
+    public function push(HubInterface $hub): Response
     {
         $update = new Update(
             '/chat',
-            json_encode(['message' => 'Hello World']),
-            false
+            json_encode(['data' => 0])
         );
-        $publisher($update);
+//
+        $hub->publish($update);
 
-        return $this->json('Done');
+
+        return new Response($this->generateUrl("chat"));
     }
 }

@@ -148,7 +148,7 @@
 
         </div></div>
 
-    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" >
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="position: absolute;top: 0;right: 0;">
         <div class="toast-header">
 {#            <img src="..." class="rounded mr-2" alt="...">#}
             <strong class="mr-auto">Bootstrap</strong>
@@ -161,4 +161,33 @@
             Hello, world! This is a toast message.
         </div>
     </div>
+
+    <script>
+        {% if app.user is null %}
+            alert("No user logged for now!");
+        {% else %}
+            {#alert("Username {{ app.user.email }}");#}
+              ///////////////////////////
+             // Inscription à mercure //
+            ///////////////////////////
+
+            // Initialisation de l'url mercure
+            const url = new URL('http://localhost:3000/.well-known/mercure')
+            // On ajoute le "topic" correspondant aux notifications de chat
+            url.searchParams.append('topic','/chat')
+            // On écoute les évènements provenant de mercure
+            const eventSource = new EventSource(url)
+            eventSource.onmessage = (e) => {
+                alert('ok');
+                console.log(e)
+            }
+            // Désinscription à mercure
+            window.addEventListener('beforeunload', function () {
+                if(eventSource != null){
+                    eventSource.close()
+                }
+            })
+        {% endif %}
+    </script>
 {% endblock %}
+
