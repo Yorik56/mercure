@@ -66,6 +66,11 @@ mercure_server:
 ### Publishing data
 > [HomeController.php](https://github.com/Yorik56/mercure/blob/main/src/Controller/HomeController.php)
 ```php
+    use Symfony\Component\Mercure\HubInterface;
+    use Symfony\Component\Mercure\Update;
+    
+    ...
+
     #[Route('/push', name: 'push')]
     public function push(HubInterface $hub): Response
     {
