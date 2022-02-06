@@ -19,7 +19,7 @@
 
 > Launch mercure server (after configuration)
 
-`make mercure mercure_server`
+`make mercure_server`
 
 ## Get Mercure
 [https://mercure.rocks/](https://mercure.rocks/)
