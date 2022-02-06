@@ -4,15 +4,19 @@
 *At the root of this project*
 
 > Get dependencies 
+
 `composer install`
 
 > Create database
+
 `doctrine:migrations:migrate`
 
 > Build css/js
+
 `yarn watch`
 
 > Launch mercure server (after configuration)
+
 `make mercure mercure_server`
 
 ## Get Mercure
