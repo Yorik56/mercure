@@ -1,18 +1,18 @@
-# Get Mercure
+## Get Mercure
 [https://mercure.rocks/](https://mercure.rocks/)
 
 
-# How it works
+## How it works
 
 ![img.png](assets/img.png)
 [tldraw.com](https://www.tldraw.com/)
-# Install
+## Install
 
 ```
 composer req mercure
 ```
 
-# Config
+## Config
 
 > .env
 
@@ -38,8 +38,8 @@ mercure_server:
 	./bin/mercure --publisher-jwt-key='!ChangeMe!' --jwt-key='!ChangeMe!' --addr='localhost:3000' --demo='1' --debug --allow-anonymous='1' --cors-allowed-origins='*' --publish-allowed-origins='http://localhost:3000/.well-known/mercure'
 ```
 
-# Client Side
-## Subscribe to mercure
+## Client Side
+### Subscribe to mercure
 > [index.html.twig](https://github.com/Yorik56/mercure/blob/main/templates/home/index.html.twig)
 ```javascript
 	// Init mercure url
@@ -59,9 +59,9 @@ mercure_server:
 		}
 	})
 ```
-# Server Side
+## Server Side
 
-## Publishing data
+### Publishing data
 > [HomeController.php](https://github.com/Yorik56/mercure/blob/main/src/Controller/HomeController.php)
 ```php
     #[Route('/push', name: 'push')]
