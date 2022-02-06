@@ -58,7 +58,7 @@ mercure:
 > [Makefile](https://github.com/Yorik56/mercure/blob/main/Makefile)
 ```yaml
 mercure_server:
-	./bin/mercure --publisher-jwt-key='!ChangeMe!' --jwt-key='!ChangeMe!' --addr='localhost:3000' --demo='1' --debug --allow-anonymous='1' --cors-allowed-origins='*' --publish-allowed-origins='http://localhost:3000/.well-known/mercure'
+	./bin/mercure --jwt-key='!ChangeMe!' --addr='localhost:3000' --demo='1' --debug --allow-anonymous='1' --cors-allowed-origins='*' --publish-allowed-origins='http://localhost:3000/.well-known/mercure'
 ```
 
 ## Client Side
