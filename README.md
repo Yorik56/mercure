@@ -1,4 +1,8 @@
 # Project Mercure Symfony 6 
+
+## Get Mercure
+[https://mercure.rocks/](https://mercure.rocks/)
+
 ## Download project
 [Otsum](https://github.com/Yorik56/mercure/archive/refs/heads/main.zip)
 
@@ -39,10 +43,6 @@
   app_register               ANY      ANY      ANY    /register		# Create account
   app_verify_email           ANY      ANY      ANY    /verify/email	# Check email validity 
 ```
-
-## Get Mercure
-[https://mercure.rocks/](https://mercure.rocks/)
-
 
 ## How it works
 
