@@ -5,6 +5,10 @@
 ## Launch project 
 *At the root of this project*
 
+> Get mercure bundle
+
+`composer req mercure`
+
 > Get dependencies 
 
 `composer install`
@@ -42,11 +46,6 @@
 
 ![img.png](assets/img.png)
 [tldraw.com](https://www.tldraw.com/)
-## Install
-
-```
-composer req mercure
-```
 
 ## Config
 
