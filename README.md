@@ -23,7 +23,7 @@ MERCURE_PUBLISH_URL=.well-known/mercure
 MERCURE_JWT_SECRET=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZXJjdXJlIjp7InN1YnNjcmliZSI6WyIqIl0sInB1Ymxpc2giOlsiKiJdfX0.M1yJUov4a6oLrigTqBZQO_ohWUsg3Uz1bnLD4MIyWLo
 ```
 
-> config/packages/mercure.yaml
+> [config/packages/mercure.yaml](https://github.com/Yorik56/mercure/blob/main/config/packages/mercure.yaml)
 
 ```yaml
 mercure:
@@ -32,7 +32,7 @@ mercure:
             url: '%env(MERCURE_URL)%'
             jwt: '%env(MERCURE_JWT_SECRET)%'
 ```
-> Makefile
+> [Makefile](https://github.com/Yorik56/mercure/blob/main/Makefile)
 ```yaml
 mercure_server:
 	./bin/mercure --publisher-jwt-key='!ChangeMe!' --jwt-key='!ChangeMe!' --addr='localhost:3000' --demo='1' --debug --allow-anonymous='1' --cors-allowed-origins='*' --publish-allowed-origins='http://localhost:3000/.well-known/mercure'
