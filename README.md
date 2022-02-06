@@ -21,6 +21,19 @@
 
 `make mercure_server`
 
+## Routes
+
+`debug:router`
+
+```shell
+  chat                       ANY      ANY      ANY    /chat
+  token                      ANY      ANY      ANY    /token
+  push                       ANY      ANY      ANY    /push
+  login                      ANY      ANY      ANY    /login
+  app_register               ANY      ANY      ANY    /register
+  app_verify_email           ANY      ANY      ANY    /verify/email
+```
+
 ## Get Mercure
 [https://mercure.rocks/](https://mercure.rocks/)
 
