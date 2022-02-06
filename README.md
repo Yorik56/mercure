@@ -1,4 +1,5 @@
-# Fonctionnement 
+# How it works
+
 ![img.png](assets/img.png)
 
 # Install
