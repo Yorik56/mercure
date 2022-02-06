@@ -1,4 +1,6 @@
 # Project Mercure Symfony 6 
+## Download project
+[Otsum](https://github.com/Yorik56/mercure/archive/refs/heads/main.zip)
 
 ## Launch project 
 *At the root of this project*
