@@ -1,16 +1,16 @@
 # Project Mercure Symfony 6 
 
 ## Launch project 
-> At the root of this project
+*At the root of this project*
 
 > Get dependencies 
-- `composer install`
+`composer install`
 > Create database
-- `doctrine:migrations:migrate`
+`doctrine:migrations:migrate`
 > Build css/js
-- `yarn watch`
+`yarn watch`
 > Launch mercure server (after configuration)
-- `make mercure mercure_server`
+`make mercure mercure_server`
 
 ## Get Mercure
 [https://mercure.rocks/](https://mercure.rocks/)
