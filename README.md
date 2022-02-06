@@ -26,12 +26,12 @@
 `debug:router`
 
 ```shell
-  chat                       ANY      ANY      ANY    /chat
-  token                      ANY      ANY      ANY    /token
-  push                       ANY      ANY      ANY    /push
-  login                      ANY      ANY      ANY    /login
-  app_register               ANY      ANY      ANY    /register
-  app_verify_email           ANY      ANY      ANY    /verify/email
+  chat                       ANY      ANY      ANY    /chat             # Bootsrap 4 chat theme (hub)
+  token                      ANY      ANY      ANY    /token		# Create a token 
+  push                       ANY      ANY      ANY    /push		# Send notification
+  login                      ANY      ANY      ANY    /login		# Get logged
+  app_register               ANY      ANY      ANY    /register		# Create account
+  app_verify_email           ANY      ANY      ANY    /verify/email	# Check email validity 
 ```
 
 ## Get Mercure
