@@ -40,6 +40,7 @@ mercure_server:
 
 # Client Side
 ## Subscribe to mercure
+> [index.html.twig](https://github.com/Yorik56/mercure/blob/main/templates/home/index.html.twig)
 ```javascript
 	// Init mercure url
 	const url = new URL('http://localhost:3000/.well-known/mercure')
@@ -61,7 +62,7 @@ mercure_server:
 # Server Side
 
 ## Publishing data
-
+> [HomeController.php](https://github.com/Yorik56/mercure/blob/main/src/Controller/HomeController.php)
 ```php
     #[Route('/push', name: 'push')]
     public function push(HubInterface $hub): Response
