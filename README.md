@@ -1,3 +1,7 @@
+# Get Mercure
+[https://mercure.rocks/](https://mercure.rocks/)
+
+
 # How it works
 
 ![img.png](assets/img.png)
