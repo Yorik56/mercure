@@ -1,3 +1,6 @@
+# Fonctionnement 
+![img.png](assets/img.png)
+
 # Install
 
 ```
