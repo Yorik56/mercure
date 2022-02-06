@@ -20,6 +20,7 @@
 > Build css/js
 
 `yarn install`
+
 `yarn watch`
 
 > Launch mercure server (after configuration)
