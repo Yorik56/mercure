@@ -5,11 +5,11 @@
 ## Launch project 
 *At the root of this project*
 
-> Get mercure bundle
+> Install only the mercure bundle
 
 `composer req mercure`
 
-> Get dependencies 
+> Install all this project dependencies 
 
 `composer install`
 
